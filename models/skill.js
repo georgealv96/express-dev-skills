@@ -45,7 +45,16 @@ const skills = [
 
 module.exports = {
   getAll,
-  getOne
+  getOne,
+  create
+}
+
+function create(skill) {
+  // Add the number for the skill
+  skill.number = skills[skills.length - 1].number + 1
+  skill.picture =
+    'https://www.practiceportuguese.com/wp-content/uploads/2020/06/asking-questions.jpg'
+  skills.push(skill)
 }
 
 function getOne(number) {

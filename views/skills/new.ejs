@@ -9,7 +9,8 @@
 <body>
   <h1><%= title %></h1>
   <form action="/skills" method="POST">
-    <input type="text" name="skill">
+    <!-- the "name" attribute has to be whatever key holds where you want to put the input in -->
+    <input type="text" name="name" placeholder="New Skill"> 
     <button type="submit">Save</button>
   </form>
 </body>

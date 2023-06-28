@@ -7,7 +7,10 @@ module.exports = {
   create
 }
 
-function create(req, res) {}
+function create(req, res) {
+  res.redirect('/skills')
+  Skill.create(req.body)
+}
 
 function newSkill(req, res) {
   res.render('skills/new', { title: 'New Skill' })
