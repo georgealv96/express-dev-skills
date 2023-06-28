@@ -46,7 +46,18 @@ const skills = [
 module.exports = {
   getAll,
   getOne,
-  create
+  create,
+  deleteOne
+}
+
+function deleteOne(number) {
+  number = parseInt(number)
+
+  // Delete the object from the array
+  skills.splice(
+    skills.findIndex((skill) => skill.number === number),
+    1
+  )
 }
 
 function create(skill) {
