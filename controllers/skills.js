@@ -6,13 +6,7 @@ module.exports = {
   new: newSkill,
   create,
   delete: deleteSkill
-  // update
 }
-
-// function update(req, res) {
-//   Skill.editOne(req.params.number)
-//   res.redirect('/skills/update')
-// }
 
 function deleteSkill(req, res) {
   Skill.deleteOne(req.params.number)

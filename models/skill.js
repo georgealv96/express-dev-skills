@@ -48,12 +48,7 @@ module.exports = {
   getOne,
   create,
   deleteOne
-  // editOne
 }
-
-// function editOne(number) {
-//   number = parseInt(number)
-// }
 
 function deleteOne(number) {
   number = parseInt(number)
