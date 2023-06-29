@@ -32,15 +32,14 @@ img {
 }
 
 .delete-form {
-  display: inline-block;
-  margin-right: 10px;
+  margin: 10px 0;
 }
 
 .delete-form button {
   color: white;
   background-color: brown;
   font-size: 20px;
-  border-radius: 50%;
+  border-radius: 10px 10px;
 }
 
 .delete-form button:hover {

@@ -11,6 +11,12 @@
   |
   <a href="/skills">GO BACK</a>
   <h1><%= skill.name %></h1>
-  <img src="<%= skill.picture %>" alt="">
+  <img src="<%= skill.picture %>" alt="image">
+  <form action="/skills/<%= skill.number %>?_method=DELETE" class="delete-form" method="POST">
+    <button type="submit">DELETE</button>
+  </form>
+  <!-- <form action="/skills/update">
+    <button>EDIT SKILL</button>
+  </form> -->
 </body>
 </html>
